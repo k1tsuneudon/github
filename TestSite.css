@@ -1,0 +1,136 @@
+/*htmlタグにscroll-behavior: smooth;を適用することで全てスムーススクロールになる*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*header 上が狭く感じたから5％のmarginを取った*/
+header {
+    margin-top: 5%;
+}
+
+h1 {
+    text-align: center;
+}
+
+/*header menu の背景、中央寄せを指定*/
+.h-menu {
+    list-style: none;
+    background-color: #d8d8d8;
+    text-align: center;
+}
+
+/* .h-menu>ul>li を横並びにして太字化*/
+.h-menu ul li {
+    display: inline-block;
+    padding: 0 20px;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+/*header の a を黒色にしてアンダーラインも消去*/
+.h-menu ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+/*カーソルが触れている間だけ各言語のイメージカラーに変化*/
+.HTML:hover {
+    color: crimson;
+}
+
+.CSS:hover {
+    color: #2e9afe;
+}
+
+.JavaScript:hover {
+    color: #ffbf00;
+}
+
+.Python:hover {
+    color: hotpink;
+}
+
+.Ruby:hover {
+    color: red;
+}
+
+/*一度リンクから飛んだ言語がイメージカラーに変化*/
+.HTML:visited {
+    color: crimson;
+}
+
+.CSS:visited {
+    color: #2e9afe;
+}
+
+.JavaScript:visited {
+    color: #ffbf00;
+}
+
+.Python:visited {
+    color: hotpink;
+}
+
+.Ruby:visited {
+    color: red;
+}
+
+/*適当にスクロールしてもぴったり画面に合わせて移動してくれる*/
+.main {
+    list-style: none;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    text-align: center;
+}
+
+.content {
+    scroll-snap-align: start;
+    height: 100vh;
+}
+
+/*各言語ごとにイメージカラーを設定header のa と同じ色*/
+#HTML {
+    background-color: crimson;
+    color:white;
+}
+
+#CSS {
+    background-color: #2e9afe;
+    color: white;
+}
+
+#JavaScript {
+    background-color: #ffbf00;
+    color: white;
+}
+
+#Python {
+    background-color: hotpink;
+    color:white;
+}
+
+#Ruby {
+    background-color: red;
+    color:white;
+}
+
+.h2 {
+    border-bottom: 1px white solid;
+}
+
+/*top へ戻るボタンの装飾　position: fixed;で画面の同じ位置に配置*/
+#top-btn {
+    text-align: center;
+    border: 2px white solid;
+    border-radius: 10px;
+    width: 5%;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+
+#top-btn a {
+    text-decoration: none;
+    color: white;  
+}
